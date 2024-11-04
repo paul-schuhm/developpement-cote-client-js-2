@@ -1,5 +1,6 @@
 console.log('Heritage')
 
+//Faire de l'héritage (partage de code entre objets)
 
 class Person {
     constructor(prenom, nom) {
@@ -20,3 +21,20 @@ class Friend extends Person {
         console.log('Help me please !')
     }
 }
+
+let friend = new Friend('John', 'Doe', 'Jojo');
+
+//Classes
+class Foo{
+    constructor(){
+        this.bar = 'bar'
+    }
+
+    //Enregistrer une méthode
+    method(){
+        //Faire référence à une donnée de l'objet
+        return this.bar;
+    }
+}
+
+let tableau = [1,2,3];
