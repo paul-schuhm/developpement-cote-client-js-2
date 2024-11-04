@@ -18,15 +18,15 @@ console.log(obj.firstName, obj.lastName);
 //Constructeur d'objets qui représentent une personne
 //Nom, prénom
 
-let jane = {
-    firstName: 'Jane',
-    lastName: 'Doe',
-}
+// let jane = {
+//     firstName: 'Jane',
+//     lastName: 'Doe',
+// }
 
-let john = {
-    firstName: 'John',
-    lastName: 'Doe'
-}
+// let john = {
+//     firstName: 'John',
+//     lastName: 'Doe'
+// }
 
 //Fabrique des objets à la chaine avec les mêmes propriétés
 //La fonction constructeur prend en arguments les données
@@ -44,15 +44,14 @@ function Person(firstName, lastName){
     }
 }
 //Créer un objet à partir de la fonction constructeur
+let john = new Person('John', 'Doe');
+let jane = new Person('Jane', 'Doe')
 let lilou = new Person('Lilou', 'Doe');
 
 //Tests
 
-console.log(jane, john, lilou);
-
-//Appel de la fonction propre à l'objet (méthode)
+lilou.greet()
 jane.greet();
-//Est ce que je peux faire ça ?
 john.greet();
 
 
