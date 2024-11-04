@@ -6,7 +6,7 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 - [Développement côté client avec Javascript (2ème année)](#développement-côté-client-avec-javascript-2ème-année)
   - [Démos](#démos)
   - [Exercices et corrections](#exercices-et-corrections)
-  - [Références](#références)
+  - [Bibliographie](#bibliographie)
     - [Documentation](#documentation)
     - [Livres](#livres)
     - [Sur le web](#sur-le-web)
@@ -24,7 +24,7 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 
 > À venir
 
-## Références
+## Bibliographie
 
 - [Développement côté client (1ère année)](https://github.com/paul-schuhm/developpement-cote-client-js), le dépôt du cours de 1ère année;
 
