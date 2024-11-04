@@ -54,4 +54,45 @@ lilou.greet()
 jane.greet();
 john.greet();
 
+console.log(lilou, jane, john)
+
+//Prototype
+
+
+// let someObject = new Object('foo', 'bar');
+// console.log(someObject)
+
+
+//Les classes (sucre syntaxique)
+
+// function Rectangle(hauteur, largeur){
+//     this.hauteur = hauteur;
+//     this.largeur = largeur;
+// }
+
+// Rectangle.prototype.surface = function(){
+//     return this.hauteur * this.largeur;
+// }
+
+// let rectangles = [new Rectangle(1,1), new Rectangle(2,2)]
+
+
+
+
+// class Rectangle {
+//     //Remplacement de la fonction Constructeur
+//     constructor(hauteur, largeur) {
+//       this.hauteur = hauteur;
+//       this.largeur = largeur;
+//     }
+
+//     //Enregistrée sur le prototype (partage de code ok)
+//     surface(){
+//         return this.hauteur * this.largeur;
+//     }
+// }
+
+//let rect = new Rectangle(2, 10);
+//console.log(rect)
+  
 
