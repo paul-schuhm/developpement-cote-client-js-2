@@ -89,13 +89,20 @@ const by = function(letter){
     }
 }
 
+//On peut générér des filtres pour chaque lettre
 // const filterByJ = filterByLetter('j');
 // const filterByD = filterByLetter('d');
 
 //input user (recupérée depuis l'exterieur)
 const letter = 'a';
+console.log(users.filter(by(letter)))
 
-console.log(users.filter(by('p')))
+//Tri par age (du plus jeune au plus âgé) ??
+//@See : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+users.sort(function (a, b){
+    //Placer a avant b => retourner un nombre négatif
+    //Placer a après b => retourner un nombre positif
+    return a.age - b.age;
+});
 
-
-// console.log(total)
+console.log(users)
