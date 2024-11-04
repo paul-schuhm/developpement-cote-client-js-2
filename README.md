@@ -2,9 +2,34 @@
 
 Ce dépôt contient les sources du module *Développement Front-End* (côté client), 2ème année (B2). Vous y retrouverez les démos réalisées en cours, les exercices et leurs corrections.
 
+
+- [Développement côté client avec Javascript (2ème année)](#développement-côté-client-avec-javascript-2ème-année)
+  - [Démos](#démos)
+  - [Exercices et corrections](#exercices-et-corrections)
+  - [Références](#références)
+    - [Documentation](#documentation)
+    - [Livres](#livres)
+    - [Sur le web](#sur-le-web)
+    - [Conférences/Vidéos Sur YouTube](#conférencesvidéos-sur-youtube)
+    - [Standards](#standards)
+
+
+## Démos
+
+> À venir
+
+## Exercices et corrections
+
+> À venir
+
 ## Références
 
 - [Développement côté client (1ère année)](https://github.com/paul-schuhm/developpement-cote-client-js), le dépôt du cours de 1ère année;
+
+### Documentation
+
+- [MDN : Resources for Developers, by Developers](https://developer.mozilla.org/fr/), la documentation unifiée des technologies du web
+- [JavaScript (MDN)](https://developer.mozilla.org/fr/docs/Web/JavaScript), le point d'entrée de la MDN pour apprendre JS. Guides, Tutoriels par niveau, Références
 
 ### Livres
 
@@ -28,7 +53,13 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 <!-- 
 Senior JS Developer
  -->
-- [Wat](https://www.destroyallsoftware.com/talks/wat), de Gary Bernhardt, CodeMash 2012. Sur les zones d'ombre des langages *faiblement typés*, dont JS. Avec **humour**; 
-- [JavaScript Objects and Prototypes In-depth](https://youtube.com/playlist?list=PLqq-6Pq4lTTaflXUL0v3TSm86nodn0c_u), excellente série de vidéos détaillées pour bien comprendre les specs de JS et son approche orientée prototype
-- [What the heck is the event-loop anyway ?](https://www.youtube.com/watch?v=8aGhZQkoFbQ), de Philip Roberts. Pour comprendre l'environnement d'exécution de JavaScript. *Classic*
-- [JSConf](https://www.youtube.com/@jsconf_), la chaîne YouTube de [JSConf](https://jsconf.com/). Des tonnes de conférences pour approfondir ses connaissances en JavaScript et réfléchir à des choses;
+- [Wat](https://www.destroyallsoftware.com/talks/wat), de Gary Bernhardt, CodeMash 2012. Sur les zones d'ombre des langages *faiblement typés*, dont JS. Avec **humour** ; 
+- [JavaScript Objects and Prototypes In-depth](https://youtube.com/playlist?list=PLqq-6Pq4lTTaflXUL0v3TSm86nodn0c_u), excellente série de vidéos détaillées pour bien comprendre les specs de JS et son approche orientée prototype ;
+- [What the heck is the event-loop anyway ?](https://www.youtube.com/watch?v=8aGhZQkoFbQ), de Philip Roberts. Pour comprendre l'environnement d'exécution de JavaScript. *Classic* ;
+- [JSConf](https://www.youtube.com/@jsconf_), la chaîne YouTube de [JSConf](https://jsconf.com/). Des tonnes de conférences pour approfondir ses connaissances en JavaScript et réfléchir à des choses ;
+
+
+### Standards
+
+- [ECMA-262](https://ecma-international.org/publications-and-standards/standards/ecma-262/), le standard ECMAScript (dernière version) ;
+- [RFC 8259 : The JavaScript Object Notation (JSON) Data Interchange Format](https://datatracker.ietf.org/doc/html/rfc8259) ;
