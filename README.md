@@ -10,7 +10,7 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 
 > En prendre un
 
-<img src="./assets/learning-js.png" height=200>
+<img src="./assets/learning-js.png" height=200><img src="./assets/eloquent-js.png" height=200><img src="./assets/js-cookbook.png" height=200><img src="./assets/modern-js-for-the-impatient.png" height=200>
 
 - [Modern JavaScript for the Impatient](https://www.oreilly.com/library/view/modern-javascript-for/9780136502166/), de Cay S. Horstmann, Addison-Wesley Professional, 2020. **LI+** ;
 - [JavaScript Cookbook: Programming the web (3rd edition)](https://www.oreilly.com/library/view/javascript-cookbook-3rd/9781492055747/), de Scott, MacDonald et Powers, 0'Reilly, 2021. **LP+** ;
