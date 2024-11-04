@@ -11,6 +11,8 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
     - [Livres](#livres)
     - [Sur le web](#sur-le-web)
     - [Conférences/Vidéos Sur YouTube](#conférencesvidéos-sur-youtube)
+    - [Bibliothèques](#bibliothèques)
+    - [Quelques API web](#quelques-api-web)
     - [Standards](#standards)
 
 
@@ -58,6 +60,20 @@ Senior JS Developer
 - [What the heck is the event-loop anyway ?](https://www.youtube.com/watch?v=8aGhZQkoFbQ), de Philip Roberts. Pour comprendre l'environnement d'exécution de JavaScript. *Classic* ;
 - [JSConf](https://www.youtube.com/@jsconf_), la chaîne YouTube de [JSConf](https://jsconf.com/). Des tonnes de conférences pour approfondir ses connaissances en JavaScript et réfléchir à des choses ;
 
+### Bibliothèques
+
+- [jQuery](https://jquery.com/)
+- [Leaflet](https://leafletjs.com/)
+- [Lodash](https://lodash.com/)
+- [p5js](https://p5js.org/)
+
+### Quelques API web
+
+[Voir la liste complète](https://developer.mozilla.org/fr/docs/Web/API).
+
+- [DOM](https://developer.mozilla.org/fr/docs/Web/API/Document_Object_Model) ;
+- [Fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API) ;
+- [Keyboard API](https://developer.mozilla.org/en-US/docs/Web/API/Keyboard_API)
 
 ### Standards
 
