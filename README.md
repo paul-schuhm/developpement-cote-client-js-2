@@ -18,11 +18,11 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 
 ## Démos
 
-> À venir
+- [Accéder à la démo sur les rappels, la chaine de prototype, map, filter, reduce](./demos/environement-dev/)
 
 ## Exercices et corrections
 
-> À venir
+- [Accéder aux corrections de la fiche d'exercices](./corrections/)
 
 ## Bibliographie
 
@@ -39,10 +39,10 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 
 <img src="./assets/learning-js.png" height=200><img src="./assets/eloquent-js.png" height=200><img src="./assets/js-cookbook.png" height=200><img src="./assets/modern-js-for-the-impatient.png" height=200>
 
+- [Learning JavaScript, 3rd Edition](https://www.oreilly.com/library/view/learning-javascript-3rd/9781491914892/), de Ethan Brown, O'Reilly, 2016. **LE+**. Pour apprendre les fondamentaux.
 - [Modern JavaScript for the Impatient](https://www.oreilly.com/library/view/modern-javascript-for/9780136502166/), de Cay S. Horstmann, Addison-Wesley Professional, 2020. **LI+** ;
-- [JavaScript Cookbook: Programming the web (3rd edition)](https://www.oreilly.com/library/view/javascript-cookbook-3rd/9781492055747/), de Scott, MacDonald et Powers, 0'Reilly, 2021. **LP+** ;
+- [JavaScript Cookbook: Programming the web (3rd edition)](https://www.oreilly.com/library/view/javascript-cookbook-3rd/9781492055747/), de Scott, MacDonald et Powers, 0'Reilly, 2021. **LP+**. Recettes pour des problèmes connus. À utiliser après avoir saisi les fondamentaux ;
 - [Simplifying JavaScript : Writing Modern JavaScript with ES5, ES6 and Beyond](https://pragprog.com/titles/es6tips/simplifying-javascript/), de Joe Morgan, The Pragmatic Bookshelf, 2018. **LP+** ;
-- [Learning JavaScript, 3rd Edition](https://www.oreilly.com/library/view/learning-javascript-3rd/9781491914892/), de Ethan Brown, O'Reilly, 2016. **LE+**
 - [Eloquent JavaScript, 3rd Edition](https://www.oreilly.com/library/view/eloquent-javascript-3rd/9781492071198/), de Marijn Haverbeke, No Starch Press, 2018. **LE+**
 - [JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language](), **LE++**. Une fois qu'on connaît bien JS, s'en servir comme référence. Parle de JS dans le browser, Node.js.
 
