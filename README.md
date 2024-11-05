@@ -52,13 +52,12 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 
 ### Conférences/Vidéos Sur YouTube
 
-<!-- 
-Senior JS Developer
- -->
+
 - [Wat](https://www.destroyallsoftware.com/talks/wat), de Gary Bernhardt, CodeMash 2012. Sur les zones d'ombre des langages *faiblement typés*, dont JS. Avec **humour** ; 
 - [JavaScript Objects and Prototypes In-depth](https://youtube.com/playlist?list=PLqq-6Pq4lTTaflXUL0v3TSm86nodn0c_u), excellente série de vidéos détaillées pour bien comprendre les specs de JS et son approche orientée prototype ;
 - [What the heck is the event-loop anyway ?](https://www.youtube.com/watch?v=8aGhZQkoFbQ), de Philip Roberts. Pour comprendre l'environnement d'exécution de JavaScript. *Classic* ;
 - [JSConf](https://www.youtube.com/@jsconf_), la chaîne YouTube de [JSConf](https://jsconf.com/). Des tonnes de conférences pour approfondir ses connaissances en JavaScript et réfléchir à des choses ;
+- [Interview with Senior JS Developer](https://www.youtube.com/watch?v=Uo3cL4nrGOk), de Programers are also human. *"Should you learn JavaScript ? Nope. Is there any other option ? Nope !"*
 
 ### Bibliothèques
 
