@@ -35,7 +35,7 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 
 ### Livres
 
-> En prendre un
+> En prendre un. Ces livres se trouvent assze facilement sur le web...
 
 <img src="./assets/learning-js.png" height=200><img src="./assets/eloquent-js.png" height=200><img src="./assets/js-cookbook.png" height=200><img src="./assets/modern-js-for-the-impatient.png" height=200>
 
