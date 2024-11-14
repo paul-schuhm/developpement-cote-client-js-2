@@ -1,6 +1,9 @@
+# Démo en live (1er jour)
+
 ## Lancer le projet
 
 ~~~bash
+npm install
 npm run dev
 ~~~
 

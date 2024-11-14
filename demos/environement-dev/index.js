@@ -77,8 +77,6 @@ console.log(lilou, jane, john)
 // let rectangles = [new Rectangle(1,1), new Rectangle(2,2)]
 
 
-
-
 // class Rectangle {
 //     //Remplacement de la fonction Constructeur
 //     constructor(hauteur, largeur) {
