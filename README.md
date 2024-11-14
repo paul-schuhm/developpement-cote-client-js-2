@@ -19,6 +19,8 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 ## Démos
 
 - [Accéder à la démo sur les rappels, la chaine de prototype, map, filter, reduce](./demos/environement-dev/)
+- [Accéder à la démo sur le linter et formater avec ESLint et Prettier](./demos/linter-formatter/)
+- [Accéder à la démo sur les tests avec jest](./demos/testing/)
 
 ## Exercices et corrections
 
