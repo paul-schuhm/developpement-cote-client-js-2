@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui fait quoi ?</title>
+    <style>
+
+        div#specialties{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+
+            div {
+
+                h2{
+                    padding-left: 10px;
+                }
+                background-color: gray;
+            }
+
+            ul{
+                min-height: 50px;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section>
+
+            <h1>Qui fait quoi ?</h1>
+
+            <p>Chaque étudiant dispose d'une spécialité. Placer les étudiants dans leur spécialité respective par <em>glisser-déposer</em></p>
+
+        </section>
+
+        <p id="drag_and_drop_result"></p>
+
+        <ul id="students">
+            <li data-spe="dev" draggable="true" id="1">Jane</li>
+            <li data-spe="design" draggable="true" id="2">John</li>
+        </ul>
+
+        <div id="specialties">
+            <div>
+                <h2>Spécialité dev</h2>
+                <ul id="dev"></ul>
+            </div>
+            <div>
+                <h2>Spécialité design</h2>
+                <ul id="design"></ul>
+            </div>
+            <div>
+                <h2>Spécialité marketing</h2>
+                <ul id="marketing"></ul>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>

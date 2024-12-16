@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Démo HTML Drag and Drop API</title>
+        <style>
+            p#p1 {
+                border: 1px solid black;
+            }
+
+            div#drop_zone {
+                border: 1px dashed green;
+                min-height: 50px;
+                background: blueviolet;
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .dragging {
+                opacity: 0.5;
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <h2>Liens utiles</h2>
+
+            <p id="p1" draggable="true"">
+                Cet élément peut être déplacé.
+            </p>
+
+            <div id= "drop_zone">
+                Zone pour le dépôt
+                </div>
+            <ul>
+                <li>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/API/HTML_Drag_and_Drop_API">MDN: Glisser et
+                        déposer</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/API/HTML_Drag_and_Drop_API/Drag_operations">MDN:
+                        Opérations de glissement</a>
+                </li>
+            </ul>
+        </section>
+
+        <script>
+
+
+            const draggable = document.getElementById('p1');
+            const dropZone = document.getElementById('drop_zone');
+
+
+            draggable.addEventListener('dragstart', (event) => {
+                event.dataTransfer.setData("text/plain", event.target.innerText);
+                event.dataTransfer.setData("application/my-app", event.target.id);
+                event.dataTransfer.dropEffect = "copy";
+                event.target.classList.add('dragging')
+                console.log('dragstart');
+                // Rarement utilisée
+                const img = new Image();
+                img.src = "assets/cat.jpeg";
+                event.dataTransfer.setDragImage(img, 10, 10);
+            })
+
+            dropZone.addEventListener('dragover', (event) => {
+                //Penser à ajouter pour autoriser le drop !
+                //Sinon le comportement par défaut (drop interdit) est utilisé
+                //et l'event de drop de ne sera pas déclenché
+                event.preventDefault();
+                // event.dataTransfer.dropEffect = "move";
+                console.log('dragover')
+            });
+
+            dropZone.addEventListener('drop', (event) => {
+                event.preventDefault();
+                var data = event.dataTransfer.getData("application/my-app");
+                event.target.appendChild(document.getElementById(data));
+                console.log('drop')
+            });
+
+            dropZone.addEventListener('dragend', (event) => {
+                event.preventDefault();
+                event.target.classList.remove('dragging')
+                console.log('drag end')
+            });
+
+        </script>
+    </body>
+
+</html>
