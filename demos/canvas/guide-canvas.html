@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div>
+        <input type="range" name="slider_amplitude_randomness" id="slider_amplitude_randomness" max="100" min="0" value="0">
+    </div>
+
+    <canvas id="canvas" width="1000" height="1000"></canvas>
+
+
+    <script>
+
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+        //Dessine sur le canvas
+        function draw_pattern(random_amplitude = 0) {
+
+            //Position horizontale de la pointe du crayon
+            let positionX = 0;
+            //Position verticale de la pointe du crayon
+            let positionY = 0;
+            //Taille du canvas
+            const w = 1000;
+
+            //Paramètres de notre dessin => brancher à des composants de l'interface (slide, bouton, colorPicker, etc.)
+
+            //Amplitude du hasard injecté dans la grille
+
+            //Taille des carrés/rectangles (en pixels)
+            let rectangle_width = 10;
+            let rectangle_height = 10;
+
+            //Décalages
+            let shift_x = 20;
+            let shift_y = 30;
+
+            //Couleur
+            let color = "red";
+
+
+            for (let i = 0; i < 5000; i++) {
+
+                //Si on sort du canvas : retour à la ligne + saut de ligne
+                if (positionX > w) {
+                    //Retour à la ligne
+                    positionX = 0;
+                    //Saut de ligne
+                    positionY = positionY + shift_y;
+                }
+
+                ctx.fillStyle = color;
+                //Dessiner un rectangle
+                //ctx.fillRect(positionX, positionY + Math.random() * random_amplitude, rectangle_width, rectangle_height);
+                //Dessiner un cercle
+                ctx.beginPath();
+                ctx.arc(positionX, positionY + Math.random() * random_amplitude, 5 + Math.random() * random_amplitude, 0, Math.PI * 2);
+                ctx.fill();
+                //Une fois que j'ai dessiné, je me décale d'une certainde distance
+                positionX = positionX + shift_x + Math.random() * random_amplitude;
+            }
+        }
+
+        //Dessiner
+        draw_pattern();
+
+        //UI
+
+        //Référence vers le slider
+        const slider_randomness = document.getElementById('slider_amplitude_randomness');
+        //Ecouter l'évènement 'change' (quand l'user modifie l'état du slider)
+        slider_randomness.addEventListener('change', (event) => {
+            //Récuperer la nouvelle valeur d'intensité de l'aléatoire 
+            let random_amplitude = event.target.value;
+            //Redessiner : effacer le dessin précédent + dessiner le nouveau dessin
+            ctx.reset();
+            draw_pattern(random_amplitude);
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

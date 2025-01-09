@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Canvas</title>
+    <style>
+        canvas{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Démo Canvas API</h1>
+
+    <canvas id="canvas"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        //Paramètres
+
+        //Taille d'un cercle (rayon) en pixels
+        const r = 50;
+        //Diamètre d'un cercle en pixels
+        const d = 2 * r;
+
+        //Espacement entre chaque cercle
+        const dx = d;
+
+        //Objet global
+        const ctx = canvas.getContext("2d");
+
+        function drawCircle(x, y, radius) {
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, 2 * Math.PI);
+            ctx.stroke();
+        }
+
+        //Dessiner une première ligne de cercles
+        //Boucle : expression initiale, condition d'arrêt, instruction à répéter à chaque itération
+        //Expression initiale : x = 0;
+        //Condition d'arrêt : x > canvas.width
+
+        //Récupérer les dimensions du canvas. 
+        //Recupérer la largeur et la hauteur d'un élément du DOM ?
+        console.log(canvas)
+
+
+
+        //Itération : 
+        for(let x = 0; x < canvas.width + dx ; x+= dx ){
+            drawCircle(x, 0, r);
+        }
+
+    </script>
+</body>
+
+</html>

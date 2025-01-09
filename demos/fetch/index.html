@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Utiliser FETCH</h1>
+
+    <p>Envoyer et traiter des requêtes HTTP directement depuis notre script JavaScript.</p>
+
+    <p>On va utiliser le <a href="https://jsonplaceholder.typicode.com/">"faux" service JSON Placeholder</a> pour
+        récupèrer des données.</p>
+
+    <h2>Posts</h2>
+
+    <button id="btn_update_posts" title="Mettre à jour la liste des posts publiés">Mettre à jour</button>
+
+    <!-- Cette liste va être peuplée par les publications obtenues auprès du service web -->
+    <ul id="posts"></ul>
+
+    <ul>
+        <li>
+            <a href="https://developer.mozilla.org/fr/docs/Web/API/Fetch_API">API Fetch</a>
+        </li>
+        <li>
+            <a href="https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch">Utiliser Fetch</a>
+        </li>
+    </ul>
+
+    <script>
+
+
+        //Récupérer les posts (publications) exposée par "notre" service
+        const base_url = "https://jsonplaceholder.typicode.com";
+
+        const btn_update_posts = document.getElementById('btn_update_posts');
+        btn_update_posts.addEventListener('mousedown', (event) => {
+            update_posts();
+        });
+
+        setInterval(() => { update_posts() }, 3 * 1000);
+
+
+        //Met à jour la page avec la liste de tous les posts
+        function update_posts() {
+
+            console.log("J'envoie une requête...")
+
+            //Peut prendre un certain temps avant d'obtenir la réponse
+            //Traitement **non bloquant** = asynchrone
+            fetch("https://jsonplaceholder.typicode.com/posts")
+                //.json() est aussi un traitement asynchrone (comme fetch)
+                //d'où la nécessité d'attendre que la réponse arrive dans un .then pour la traiter
+                .then(response => response.json())
+                .then(posts => {
+                    //On a récupéré les données issues du service
+                    //Afficher la liste de posts sur la page web dans une liste
+
+                    //Transformation de chaque post (objet js) en élément HTML li
+                    let lis = posts.map(post => {
+                        //On va afficher post.body, post.title
+                        let li = document.createElement("li");
+                        li.innerHTML = `<h3>${post.title}</h3>`;
+                        return li;
+                    });
+
+                    console.log(lis);
+
+                    //Insérer les lis dans la liste
+                    const ul_posts = document.getElementById('posts');
+
+                    lis.forEach(li => {
+                        ul_posts.appendChild(li);
+                    });
+
+
+                });
+
+            console.log("La requête est envoyée");
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
