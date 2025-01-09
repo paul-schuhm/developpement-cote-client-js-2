@@ -23,6 +23,8 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 - [Accéder à la démo sur les tests avec jest](./demos/testing/)
 - [Accéder à la démo sur modules ES6](./demos/modules/)
 - [Accéder à la démo sur l'API Drag&Drop](./demos/drag&dropapi/)
+- [Accéder aux démos sur l'API Canvas](./demos/canvas/)
+- [Accéder aux démos sur l'API Fetch](./demos/fetch/)
 
 ## Exercices et corrections
 
@@ -61,11 +63,7 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 - [JavaScript Objects and Prototypes In-depth](https://youtube.com/playlist?list=PLqq-6Pq4lTTaflXUL0v3TSm86nodn0c_u), excellente série de vidéos détaillées pour bien comprendre les specs de JS et son approche orientée prototype ;
 - [What the heck is the event-loop anyway ?](https://www.youtube.com/watch?v=8aGhZQkoFbQ), de Philip Roberts. Pour comprendre l'environnement d'exécution de JavaScript. *Classic* ;
 - [JSConf](https://www.youtube.com/@jsconf_), la chaîne YouTube de [JSConf](https://jsconf.com/). Des tonnes de conférences pour approfondir ses connaissances en JavaScript et réfléchir à des choses ;
-<<<<<<< HEAD
 - [Interview with Senior JS Developer](https://www.youtube.com/watch?v=Uo3cL4nrGOk), Programmers are also human. Plus vous trouver ça drôle, mieux vous connaissez JavaScript
-=======
-- [Interview with Senior JS Developer](https://www.youtube.com/watch?v=Uo3cL4nrGOk), de Programmers are also human. *"Should you learn JavaScript ? Nope. Is there any other option ? Nope !"*
->>>>>>> e5e5bab155d591322038f74914fef0f8f852394c
 
 ### Bibliothèques
 
