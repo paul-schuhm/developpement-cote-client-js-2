@@ -63,12 +63,12 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 - [JavaScript Objects and Prototypes In-depth](https://youtube.com/playlist?list=PLqq-6Pq4lTTaflXUL0v3TSm86nodn0c_u), excellente série de vidéos détaillées pour bien comprendre les specs de JS et son approche orientée prototype ;
 - [What the heck is the event-loop anyway ?](https://www.youtube.com/watch?v=8aGhZQkoFbQ), de Philip Roberts. Pour comprendre l'environnement d'exécution de JavaScript. *Classic* ;
 - [JSConf](https://www.youtube.com/@jsconf_), la chaîne YouTube de [JSConf](https://jsconf.com/). Des tonnes de conférences pour approfondir ses connaissances en JavaScript et réfléchir à des choses ;
-- [Interview with Senior JS Developer](https://www.youtube.com/watch?v=Uo3cL4nrGOk), Programmers are also human. Plus vous trouver ça drôle, mieux vous connaissez JavaScript
+- [Interview with Senior JS Developer](https://www.youtube.com/watch?v=Uo3cL4nrGOk), Programmers are also human. Plus vous riez, mieux vous connaissez JavaScript
 
 ### Bibliothèques
 
 - [jQuery](https://jquery.com/)
-- [Leaflet](https://leafletjs.com/)
+- [Leaflet](https://leafletjs.com/), *library* très populaire pour réaliser des cartes interactives
 - [Lodash](https://lodash.com/)
 - [p5js](https://p5js.org/)
 
@@ -79,6 +79,7 @@ Ce dépôt contient les sources du module *Développement Front-End* (côté cli
 - [DOM](https://developer.mozilla.org/fr/docs/Web/API/Document_Object_Model) ;
 - [Fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API) ;
 - [Keyboard API](https://developer.mozilla.org/en-US/docs/Web/API/Keyboard_API)
+- [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API), API bas niveau pour dessiner (introduite avec HTML5)
 
 ### Standards
 
